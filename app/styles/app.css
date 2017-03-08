@@ -7,5 +7,36 @@
 }
 
 .cart_image{
-  width:100%;
+  width:auto;
+  max-height: 200px;
+}
+
+.cproduct-display{
+  border: 1px solid black;
+  text-align: center;
+}
+
+.store_image{
+  max-height: 200px;
+}
+
+.cart{
+  float:right;
+  text-align: center;
+}
+
+.cart h2{
+  margin-top: 0;
+}
+
+.cart_image{
+  max-height: 100px;
+}
+
+.cart_tile{
+  text-align: center;
+}
+
+.cdisplay{
+  margin-top: 50px;
 }

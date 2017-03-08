@@ -1,5 +1,7 @@
-{{#each model.products as |product|}}
-  {{cproduct-tile product=product}}
-{{/each}}
+<div class="cdisplay">
+  {{#each model.products as |product|}}
+    {{cproduct-tile product=product}}
+  {{/each}}
 
-{{display-cart}}
+  {{display-cart}}
+</div>

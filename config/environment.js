@@ -8,14 +8,17 @@ module.exports = function(environment) {
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
-        // Here you can enable experimental features on an ember canary build
-        // e.g. 'with-controller': true
+      // Here you can enable experimental features on an ember canary build
+      // e.g. 'with-controller': true
+        }
       },
-      EXTEND_PROTOTYPES: {
-        // Prevent Ember Data from overriding Date.parse.
-        Date: false
-      }
-    },
+
+      firebase: {
+        apiKey: "AIzaSyD1SlBh8kchMYIcVPAFdUnTJyZEWKaioiQ",
+        authDomain: "self-checkout-298e3.firebaseapp.com",
+        databaseURL: "https://self-checkout-298e3.firebaseio.com",
+        storageBucket: "self-checkout-298e3.appspot.com"
+      },
 
     APP: {
       // Here you can pass flags/options to your application instance

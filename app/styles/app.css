@@ -1,0 +1,11 @@
+.store_image {
+  width:150px;
+}
+
+.cart_tile{
+  border: 1px solid black;
+}
+
+.cart_image{
+  width:100%;
+}

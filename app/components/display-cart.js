@@ -5,9 +5,7 @@ export default Ember.Component.extend({
 
   actions:{
     addsoldItems(shoppingCart_Items){
-      debugger;
       this.sendAction('addsoldItems',shoppingCart_Items);
-
     }
   }
 });

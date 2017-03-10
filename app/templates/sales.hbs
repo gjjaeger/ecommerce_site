@@ -1,3 +1,11 @@
-{{#each model.sales as |sale|}}
-  {{sale.brand}}
-{{/each}}
+{{store-navbar}}
+<div class="container">
+  {{#each model.sales as |sale|}}
+    {{sale-tile sale=sale}}
+  {{/each}}
+  <div class="row">
+    <div class="col-xs-4 col-xs-offset-8 title">
+      Total Sales: ${{total-sales model.sales}}
+    </div>
+  </div>
+</div>

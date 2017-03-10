@@ -1,7 +1,10 @@
+{{cust-navbar}}
 <div class="cdisplay">
-  {{#each model.products as |product|}}
-    {{cproduct-tile product=product}}
-  {{/each}}
+  <div class="product_display">
+    {{#each model.products as |product|}}
+      {{cproduct-tile product=product}}
+    {{/each}}
+  </div>
 
   {{display-cart product=product addsoldItems="addsoldItems"}}
 </div>

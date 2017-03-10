@@ -4,5 +4,7 @@
     {{shopping-cart-tile item=item}}
   {{/each}}
   <p>Total : {{shoppingCart.totalprice}}</p>
-  {{#link-to 'payment'}}<button class="btn" {{action 'addsoldItems' shoppingCart.items}}>Proceed to payment</button>{{/link-to}}
+  {{#if shoppingCart.canpay}}
+    {{#link-to 'payment'}}<button class="btn" {{action 'addsoldItems' shoppingCart.items}}>Proceed to payment</button>{{/link-to}}
+  {{/if}}
 </div>

@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Service.extend({
   items: [],
 
+  canpay: false,
   totalprice: 0,
 
   add(item){
@@ -16,6 +17,7 @@ export default Ember.Service.extend({
     this.set('totalprice', total+item.get('price'));
     var new_quantity = item.get('quantity_selected')+1;
     item.set('quantity_selected',new_quantity);
+    this.set('canpay',true);
   },
 
   remove(item){
@@ -25,6 +27,7 @@ export default Ember.Service.extend({
     item.set('quantity_selected',new_quantity);
     if(item.get('quantity_selected')==0){
       this.get('items').removeObject(item);
+      this.set('canpay',false);
     }
   }
 

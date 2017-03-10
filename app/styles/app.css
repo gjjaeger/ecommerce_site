@@ -14,6 +14,15 @@
 .cproduct-display{
   border: 1px solid black;
   text-align: center;
+  padding:5px;
+  border-radius: 2px;
+  margin-top: 10px;
+  margin bottom: 10px;
+  height:200px;
+}
+
+.cproduct-display:hover{
+  background-color: grey;
 }
 
 .store_image{
@@ -23,6 +32,9 @@
 .cart{
   float:right;
   text-align: center;
+  display: fixed;
+  width:20%;
+  float:right;
 }
 
 .cart h2{
@@ -39,4 +51,48 @@
 
 .cdisplay{
   margin-top: 50px;
+  float:
+}
+
+.store_products{
+  text-align: center;
+  padding:5px;
+  border: solid 1px black;
+  border-radius: 4px;
+  margin-top:5px;
+  margin-bottom: 5px;
+
+}
+
+.store_products div p{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+.store_image{
+  max-height: 75px;
+  width: auto;
+}
+
+.update_form{
+  text-align: center;
+}
+
+.update_btn{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.title{
+  font-size: 24px;
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid black;
+  float:right;
+}
+
+.product_display{
+  width:80%;
+  float:left;
 }

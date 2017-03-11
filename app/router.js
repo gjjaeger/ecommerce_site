@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('store-index');
   this.route('payment');
   this.route('sales');
+  this.route('graph');
 });
 
 export default Router;

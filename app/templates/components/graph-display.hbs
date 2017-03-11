@@ -1,0 +1,7 @@
+
+hello
+{{#if show}}
+  {{line-chart data=data}}
+{{/if}}
+<button {{action "showSales" sales}}>Show Graph</button>
+{{line-chart data=salesGraph.data}}

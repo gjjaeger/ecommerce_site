@@ -6,4 +6,5 @@ export default Ember.Route.extend({
       sales:this.store.findAll('sale')
     });
   }
-});
+
+  });
